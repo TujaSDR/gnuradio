@@ -131,7 +131,7 @@ CHECK_CXX_SOURCE_COMPILES("
 GR_ADD_COND_DEF(HAVE_CREATEFILEMAPPING)
 
 ########################################################################
-SET(CMAKE_REQUIRED_LIBRARIES -lrt)
+SET(CMAKE_REQUIRED_LIBRARIES -pthread -lrt)
 CHECK_CXX_SOURCE_COMPILES("
     #include <sys/types.h>
     #include <sys/mman.h>
